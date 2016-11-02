@@ -1,0 +1,26 @@
+{
+    "name": "desmart/adr",
+    "authors": [
+        {
+            "name": "Kamil Fojuth",
+            "email": "fen@desmart.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "laravel/framework": "5.3.*",
+        "league/fractal": "0.14.*",
+        "desmart/laravel-commandbus": "dev-master"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~5.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "DeSmart\\ADR\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
