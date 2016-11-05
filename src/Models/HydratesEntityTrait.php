@@ -75,6 +75,10 @@ trait HydratesEntityTrait
                 continue;
             }
 
+            if ('pivot' === $propertyName) {
+                continue;
+            }
+
             // hasOne relations
             $this->{$propertyName} = $model->toEntity();
 
@@ -83,11 +87,6 @@ trait HydratesEntityTrait
 
             $prop->setValue($entity, $model->toEntity());
         }
-
-//        array_walk($relations, function (Collection $collection) use ($entity, $reflection) {
-//            $this->emptyRelationProperty($entity, $collection);
-//            $this->mapRelationCollection($reflection, $collection, $entity);
-//        });
     }
 
     /**
