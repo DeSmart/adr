@@ -1,6 +1,6 @@
 <?php
 
-namespace DeSmart\ADR\Collections;
+namespace DeSmart\ADR\Collection;
 
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 use Illuminate\Support\Collection;

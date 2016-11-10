@@ -5,8 +5,8 @@ namespace tests\DeSmart\ADR\Transformers {
     use Foo\Bar\Domain\Baz\Entity\MadeUpName;
     use Foo\Bar\Domain\Baz\Entity\NoTransformer;
     use Foo\Bar\WebPlugin\Baz\Transformer\MadeUpNameTransformer;
-    use DeSmart\ADR\Transformers\Exception\TransformerNotFoundException;
-    use DeSmart\ADR\Transformers\TransformerFactory;
+    use DeSmart\ADR\Transformer\Exception\TransformerNotFoundException;
+    use DeSmart\ADR\Transformer\TransformerFactory;
 
     class TransformerFactoryTest extends \PHPUnit_Framework_TestCase
     {

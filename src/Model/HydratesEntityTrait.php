@@ -1,6 +1,6 @@
 <?php
 
-namespace DeSmart\ADR\Models;
+namespace DeSmart\ADR\Model;
 
 use Illuminate\Support\Collection;
 

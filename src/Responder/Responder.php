@@ -1,12 +1,12 @@
 <?php
 
-namespace DeSmart\ADR\Responders;
+namespace DeSmart\ADR\Responder;
 
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Support\Collection;
-use DeSmart\ADR\Collections\PaginatedCollection;
+use DeSmart\ADR\Collection\PaginatedCollection;
 use DeSmart\ADR\Fractal\JsonApiTransformer;
 
 /**

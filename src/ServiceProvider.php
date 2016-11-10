@@ -3,8 +3,8 @@
 namespace DeSmart\ADR;
 
 use DeSmart\CommandBus\CommandBus;
-use DeSmart\ADR\Responders\Responder;
-use DeSmart\ADR\Actions\BaseAction;
+use DeSmart\ADR\Responder\Responder;
+use DeSmart\ADR\Action\BaseAction;
 
 class ServiceProvider extends \Illuminate\Support\ServiceProvider
 {

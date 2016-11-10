@@ -1,8 +1,8 @@
 <?php
 
-namespace DeSmart\ADR\Transformers;
+namespace DeSmart\ADR\Transformer;
 
-use DeSmart\ADR\Transformers\Exception\TransformerNotFoundException;
+use DeSmart\ADR\Transformer\Exception\TransformerNotFoundException;
 
 /**
  * Entity transformer factory.

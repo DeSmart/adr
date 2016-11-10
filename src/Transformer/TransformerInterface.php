@@ -1,6 +1,6 @@
 <?php
 
-namespace DeSmart\ADR\Transformers;
+namespace DeSmart\ADR\Transformer;
 
 interface TransformerInterface
 {

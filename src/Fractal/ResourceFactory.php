@@ -2,8 +2,8 @@
 
 namespace DeSmart\ADR\Fractal;
 
-use DeSmart\ADR\Transformers\TransformerFactory;
-use DeSmart\ADR\Transformers\TransformerInterface;
+use DeSmart\ADR\Transformer\TransformerFactory;
+use DeSmart\ADR\Transformer\TransformerInterface;
 use League\Fractal\Resource\Collection;
 use League\Fractal\Resource\Item;
 use League\Fractal\Resource\NullResource;

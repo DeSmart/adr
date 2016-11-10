@@ -1,6 +1,6 @@
 <?php
 
-namespace DeSmart\ADR\Transformers\Exception;
+namespace DeSmart\ADR\Transformer\Exception;
 
 class TransformerNotFoundException extends \BadMethodCallException
 {

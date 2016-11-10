@@ -1,9 +1,9 @@
 <?php
 
-namespace DeSmart\ADR\Actions;
+namespace DeSmart\ADR\Action;
 
 use DeSmart\CommandBus\Contracts\CommandBus;
-use DeSmart\ADR\Responders\Responder;
+use DeSmart\ADR\Responder\Responder;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Illuminate\Foundation\Validation\ValidatesRequests;

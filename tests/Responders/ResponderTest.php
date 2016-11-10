@@ -7,9 +7,9 @@ namespace tests\DeSmart\ADR\Responder {
     use Illuminate\Http\Response;
     use Illuminate\Support\Collection;
     use Bar\Domain\Foo\Entity\FooUser;
-    use DeSmart\ADR\Collections\PaginatedCollection;
+    use DeSmart\ADR\Collection\PaginatedCollection;
     use DeSmart\ADR\Fractal\JsonApiTransformer;
-    use DeSmart\ADR\Responders\Responder;
+    use DeSmart\ADR\Responder\Responder;
 
     class ResponderTest extends \PHPUnit_Framework_TestCase
     {

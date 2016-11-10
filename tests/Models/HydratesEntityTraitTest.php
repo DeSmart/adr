@@ -25,7 +25,7 @@ namespace tests\DeSmart\ADR\Models {
 namespace Foo\Bar\Baz\WebPlugin\Users\Model {
 
     use Illuminate\Database\Eloquent\Model;
-    use DeSmart\ADR\Models\HydratesEntityTrait;
+    use DeSmart\ADR\Model\HydratesEntityTrait;
 
     class FakeModel extends Model
     {
