@@ -40,6 +40,14 @@ trait HydratesEntityTrait
         $properties->each(function (\ReflectionProperty $property) use ($entity) {
             $propertyName = $this->toSnakeCase($property->getName());
             $property->setAccessible(true);
+
+            // If the entity already has a value set, ignore it
+            $currentValue = $property->getValue($entity);
+
+            if (null !== $currentValue && false === empty($currentValue)) {
+                return;
+            }
+
             $property->setValue($entity, $this->{$propertyName});
         });
     }
