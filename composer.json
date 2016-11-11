@@ -1,5 +1,6 @@
 {
     "name": "desmart/adr",
+    "description": "ADR pattern implementation for Laravel. Designed for https://github.com/DeSmart/laravel-vanilla.",
     "authors": [
         {
             "name": "Kamil Fojuth",
