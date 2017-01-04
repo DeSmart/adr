@@ -39,6 +39,12 @@ trait HydratesEntityTrait
 
         $properties->each(function (\ReflectionProperty $property) use ($entity) {
             $propertyName = $this->toSnakeCase($property->getName());
+
+            // if this property is not a Model attribute, then leave it, it might be a relation, we don't want to lazy-load it!
+            if (false === array_key_exists($propertyName, $this->attributes)) {
+                return;
+            }
+
             $property->setAccessible(true);
             $property->setValue($entity, $this->{$propertyName});
         });
