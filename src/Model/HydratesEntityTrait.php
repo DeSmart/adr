@@ -86,12 +86,12 @@ trait HydratesEntityTrait
             }
 
             // hasOne relations
-            $this->{$propertyName} = $model->toEntity();
+            $this->{$propertyName} = $model ? $model->toEntity() : null;
 
             $prop = $reflection->getProperty($propertyName);
             $prop->setAccessible(true);
 
-            $prop->setValue($entity, $model->toEntity());
+            $prop->setValue($entity, $model ? $model->toEntity() : null);
         }
     }
 
