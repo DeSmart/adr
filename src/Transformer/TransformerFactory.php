@@ -34,6 +34,8 @@ class TransformerFactory
         $fqn = preg_replace('/Domain/', 'WebPlugin', get_class($entity));
         $fqn = preg_replace('/Entity/', 'Transformer', $fqn);
 
-        return $fqn . 'Transformer';
+        $suffix = (1 === preg_match("/Transformer$/", $fqn)) ? '' : 'Transformer';
+
+        return $fqn . $suffix;
     }
 }
