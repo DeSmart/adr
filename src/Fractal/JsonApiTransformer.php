@@ -6,8 +6,9 @@ use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 use Illuminate\Http\Request;
 use League\Fractal\Manager;
 use League\Fractal\Pagination\IlluminatePaginatorAdapter;
+use League\Fractal\TransformerAbstract;
 
-class JsonApiTransformer
+class JsonApiTransformer extends TransformerAbstract
 {
 
     const RESOURCE_ITEM = 'item';
