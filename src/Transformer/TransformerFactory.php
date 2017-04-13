@@ -19,7 +19,7 @@ class TransformerFactory
         $name = static::getTransformerName($entity);
 
         if (0 === preg_match('/Transformer$/', $name) || false === class_exists($name)) {
-            throw new TransformerNotFoundException;
+            throw new TransformerNotFoundException("Missing transformer class '{$name}'");
         }
 
         return app()->make($name);
