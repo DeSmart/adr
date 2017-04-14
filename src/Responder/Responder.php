@@ -109,10 +109,15 @@ class Responder
      * Payload setter.
      *
      * @param $payload
+     * @param array $includes
      * @return $this
      */
-    public function with($payload)
+    public function with($payload, array $includes = [])
     {
+        if (false === empty($includes)) {
+            $this->transformer->include($includes);
+        }
+
         if (true === $payload instanceof PaginatedCollection) {
             $this->handlePaginatedCollection($payload);
         }

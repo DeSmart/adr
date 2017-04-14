@@ -35,10 +35,18 @@ class JsonApiTransformer extends TransformerAbstract
         $this->resourceFactory = $resourceFactory;
 
         if (true === $request->has('include')) {
-            $this->manager->parseIncludes(
+            $this->include(
                 $request->get('include')
             );
         }
+    }
+
+    /**
+     * @param array $includes
+     */
+    public function include(array $includes = [])
+    {
+        $this->manager->parseIncludes($includes);
     }
 
     /**

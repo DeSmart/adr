@@ -83,10 +83,11 @@ class BaseAction extends Controller
 
     /**
      * @param mixed $payload
+     * @param array $includes
      * @return Responder
      */
-    protected function respondWith($payload)
+    protected function respondWith($payload, array $includes = [])
     {
-        return $this->responder->with($payload);
+        return $this->responder->with($payload, $includes);
     }
 }
