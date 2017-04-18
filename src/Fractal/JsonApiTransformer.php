@@ -42,9 +42,9 @@ class JsonApiTransformer extends TransformerAbstract
     }
 
     /**
-     * @param array $includes
+     * @param array|string $includes
      */
-    public function include(array $includes = [])
+    public function include($includes = [])
     {
         $this->manager->parseIncludes($includes);
     }
